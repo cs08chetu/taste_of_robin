@@ -1,0 +1,240 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<title>order online</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<style>
+body{
+  background-color: rgb(255, 204, 123);
+}
+
+.title{
+  font-family: Lucida Calligraphy;
+  font-size: 8vw;
+  font-weight: bold;
+  color: rgb(205,113,53);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ourmenu{
+  margin: 10px;
+  border: groove 14px rgb(205,133,63);
+  height: 1000px;
+  background-color: #8b0000;
+  padding: 10px;
+  
+} 
+
+.tbl{
+  font-weight: bold;
+  font-family: Lucida Calligraphy;
+  color: rgb(205,113,53); 
+  border-collapse: collapse;
+  width: 100%;
+}
+td{
+  padding: 5 px 15px; 
+  border-collapse: collapse;
+}
+
+.cap{
+  font-weight: bold;
+  font-family: Lucida Calligraphy;
+  color: rgb(255,222,100);
+  font-size: 2.4vw;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.stl{
+  color: rgb(255,222,100);
+  padding-left: 52px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.5vw;
+  text-decoration: underline;
+}
+
+.stl1{
+  color: rgb(255,222,100);
+  padding-left: 40px;
+}
+
+.stl3{
+  color: rgb(255,222,100);
+  font-size: 2.4vw;
+  text-align:center;
+  text-decoration: underline;
+  padding-left: 150px;
+}
+.rupi{
+  color: rgb(255,222,100);
+  font-size: 2.5vw;
+  padding-left: 40px;
+}
+
+/* Style the buttons */
+
+.btnbox{
+  padding-left: 600px;
+  padding-bottom: 15px;
+  width: 100%;
+  background-color: rgb(255, 204, 123);
+  
+}
+
+.btn{
+  border: none;
+  padding: 10px 16px;
+  background-color: rgb(205,113,53);
+  margin-left: 5px;
+  color: rgb(255, 204, 123);
+}
+
+.btn:hover{
+  color: rgb(127,111,50);
+}
+
+.table{
+  
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0px;
+
+  height: 500px;
+}
+
+.colum{
+  
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.row{
+  height: 50%;
+}
+
+.tblimg{
+  height: 200px;
+  border-radius: 25px;
+}
+
+.tblimg:hover{
+  height: 205px;
+  transition: 0.3s ease;
+}
+
+</style>
+</head>
+
+<body>
+
+
+  <div class="box1">
+<ul>
+	<li><div class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;">Login</div>
+	</li>
+		  <li style="padding-left:320px"><a href="index.html">Home</a></li>
+  		  <li><a href="about.html">About Us</a></li>
+  		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="order.html">Order Online</a></li>
+  		  <li><a href="contact.html">Contact us</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+	</ul>
+
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="btnlog" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  
+
+</div>
+</div>
+
+	<div class="title">
+Order Online</div>
+
+
+<table class="table">
+<tr class="row">
+<td class="colum"><a href="https://www.zomato.com/pathankot/taste-of-robin-pathankot-locality/order"><img class="tblimg" src="img/zomato-app.jpg"></a></td>
+<td class="colum"><a href="https://www.swiggy.com/restaurants/taste-of-robin-patel-chowk-pathankot-257043"><img class="tblimg" src="img/swiggy-19-1500443913.jpg"></a></td>
+
+</tr>
+<tr style="border-top: 2px solid black; ">
+<td class="colum" colspan=2><a href="orderrobin.html"><img class="tblimg" src="img/1.jpg"></td>
+
+</tr>
+</table></div>
+
+
+<div class="footer"><div >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3373.544423146822!2d75.65160631521817!3d32.27033778112786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c7f6447b118e5%3A0x8a23ee80fab0e8a1!2sTaste%20of%20Robin!5e0!3m2!1sen!2sin!4v1582789251890!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" "border-radius=20px"></iframe>
+</div>
+
+<div style="font-size: 2.5vw;  color: rgb(205,113,53);; font-weight: bold; font-family: Lucida Calligraphy;"><br><br>
+
+<address> Near Vodafone Store <br>Patel Chowk,<br>Pathankot</address>
+
+<hr color=rgb(205,113,53)  width=700px;>
+
+
+<a href="contact.html"><button class="cntbtn">Contact us</button></a>
+<hr color=rgb(205,113,53)  width=700px;>
+<div style=" padding-left: 410px;">
+<table class="foottbl">
+  <tr >
+<td colspan=2 style="font-size: 2.5vw;  color: rgb(205,113,53);; font-weight: bold; font-family: Lucida Calligraphy;">Follow us on</td>
+</tr>
+<tr>
+<td>
+<a href="https://m.facebook.com/tasteofrobin/?ref=bookmarks"><img  class="social"  src="img/facebook-logo-jpg.jpg"></a></td><td>
+<a href="https://www.instagram.com/taste.of.robin/"><img  class="social"  src="img/New_Instagram_Logo.jpg" ></a>
+</td>
+</tr>
+</table>
+
+</div><hr  align=center color=rgb(205,113,53)  width=700px;>
+</div>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>				

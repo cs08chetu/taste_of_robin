@@ -1,0 +1,351 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<title>our menu2</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<style>
+body{
+  background-color: rgb(255, 204, 123);
+width:100%;
+}
+
+.title{
+  font-family: Lucida Calligraphy;
+  font-size: 8vw;
+  font-weight: bold;
+  color: rgb(205,113,53);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ourmenu{
+  margin: 10px;
+  border: groove 14px rgb(205,133,63);
+  height: 1000px;
+  background-color: #8b0000;
+  padding: 10px;
+  
+} 
+
+.tbl{
+  font-weight: bold;
+  font-family: Lucida Calligraphy;
+  color: rgb(205,113,53); 
+  border-collapse: collapse;
+  width: 100%;
+}
+td{
+  padding: 5 px 15px; 
+  border-collapse: collapse;
+}
+
+.cap{
+  font-weight: bold;
+  font-family: Lucida Calligraphy;
+  color: rgb(255,222,100);
+  font-size: 2.4vw;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.stl{
+  color: rgb(255,222,100);
+  padding-left: 52px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.5vw;
+  text-decoration: underline;
+}
+
+.stl1{
+  color: rgb(255,222,100);
+  padding-left: 40px;
+}
+
+.stl3{
+  color: rgb(255,222,100);
+  font-size: 2.4vw;
+  text-align:center;
+  text-decoration: underline;
+  padding-left: 240px;
+}
+.rupi{
+  color: rgb(255,222,100);
+  font-size: 2.5vw;
+  float: right;
+}
+
+/* Style the buttons */
+
+.btnbox{
+  padding-left: 600px;
+  padding-bottom: 15px;
+  width: auto;
+  background-color: rgb(255, 204, 123);
+  
+}
+
+.btn{
+  border: none;
+  padding: 10px 16px;
+  background-color: rgb(205,113,53);
+  margin-left: 5px;
+  color: rgb(255, 204, 123);
+}
+
+.btn:hover{
+  color: rgb(127,111,50);
+}
+
+</style>
+</head>
+
+<body>
+
+
+  <div class="box1">
+<ul>
+	<li><div class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;">Login</div>
+	</li>
+		  <li style="padding-left:320px"><a href="index.html">Home</a></li>
+  		  <li><a href="about.html">About Us</a></li>
+  		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="order.html">Order Online</a></li>
+  		  <li><a href="contact.html">Contact us</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+	</ul>
+
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="btnlog" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  
+
+</div>
+</div>
+
+	<div class="title">
+Our Menu</div>
+		<div class="ourmenu">
+
+	<table class="tbl"> <caption class="cap">Tandoor se Non Veg</caption>
+		<tr>
+		<td></td>
+		
+		
+
+		<td class="rupi">&#8377</td>
+		<td></td>
+		</tr>
+		<tr>
+	
+		<td></td>
+		
+	
+		<td class="stl1">Half</td>
+		<td class="stl1">Full</td>
+		</tr>
+		<tr>
+	
+		<td class="stl1">- Tandoori Chicken</td>
+		<td class="stl1">225</td>
+		<td class="stl1">430</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Afghani Chicken</td>
+		
+		<td class="stl1">220</td>
+		<td class="stl1">450</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Tangari Kebab</td>
+		<td class="stl1">240</td>
+		<td class="stl1">450</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Kalimi Kebab/td>
+		
+		<td class="stl1">240</td>
+		<td class="stl1">450</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Chicken Tikka (8 pcs)</td>
+		<td class="stl1"></td>
+		<td class="stl1">210</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Chicken Mirch Malai Tikka (8 pcs)</td>
+		
+		<td class="stl1"></td>
+		<td class="stl1">230</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Haryali Chicken</td>
+		<td class="stl1"></td>
+		<td class="stl1">220</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Chicken Seekh Kebab</td>
+		
+		<td></td>
+		<td class="stl1">220</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Mutton Seekh Kebab</td>
+		<td></td>
+		<td class="stl1">220</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Fish Tikka</td>
+		<td></td>
+		<td class="stl1">220</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Fish Malai Tikka</td>
+		<td></td>
+		<td class="stl1">270</td>
+		</tr>
+		<tr>
+		<td  class="stl1">- Fish Amritsari</td>
+		<td></td>
+		<td class="stl1">210</td>
+		</tr>
+		<tr>
+		<td class="stl3">Handi se Veg</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Dal Makhani</td>
+		<td></td>
+		<td class="stl1">110</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Yellow Dal Fry</td>
+		<td></td>
+		<td class="stl1">105</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Paneer Butter Masala</td>
+		<td></td>
+		<td class="stl1">185</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Kadhai Paneer</td>
+		<td class="stl1"></td>
+		<td class="stl1">175</td>
+</tr>
+<tr>
+<td class="stl1">- Muttor Paneer</td>
+<td></td>
+<td class="stl1">180</td>
+</tr>
+<tr>
+<td class="stl1">- Jeera Aloo</td>
+<td></td>
+<td class="stl1">130</td>
+</tr>
+<tr>
+<td class="stl1">- Shahi Paneer</td>
+<td></td>
+<td class="stl1">210</td>
+</tr>
+<tr>
+<td class="stl1">- Mushroom Masala</td>
+<td></td>
+<td class="stl1">230</td>
+</tr>
+<tr>
+<td class="stl1">- Muttor Mushroom</td>
+<td></td>
+<td class="stl1">220</td>
+</tr>
+<tr>
+<td class="stl3">Handi se Non Veg</td>
+
+</tr>
+<tr>
+<td class="stl1">- Butter Chicken wb/bl</td>
+<td class="stl1">225</td>
+<td class="stl1">430</td>
+</tr>
+<tr>
+<td class="stl1">- Kadhi Chicken wb/bl</td>
+<td class="stl1">230</td>
+<td class="stl1">440</td>
+</tr>
+<tr>
+<td class="stl1">- Raara Chicken wb/bl</td>
+<td class="stl1">240</td>
+<td class="stl1">450</td>
+</tr>
+<tr>
+<td class="stl1">- Chicken Tikka Butter Masala</td>
+<td></td>
+<td class="stl1">255</td>
+</tr>
+<tr>
+<td class="stl1">- Chicken Curry</td>
+<td></td>
+<td class="stl1">220</td>
+</tr><tr>
+<td class="stl1">- Mutton Rogan Josh</td>
+<td></td>
+<td class="stl1">235</td>
+</tr><tr>
+<td class="stl1">- Raara Mutton</td>
+<td></td>
+<td class="stl1">280</td>
+</tr>
+<tr>
+<td class="stl1">- Mutton Korma</td>
+<td></td>
+<td class="stl1">290</td>
+</tr><tr>
+<td class="stl1">- Chicken Korma</td>
+<td></td>
+<td class="stl1">260</td>
+</tr>
+	</table>
+	</div>	</div>
+</div>
+<div class="btnbox">
+<a href="menu.html"><button class="btn">1</button></a>
+<a href="menu2.html"><button class="btn">2</button></a>
+<a href="menu3.html"><button class="btn">3</button></a>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<title>our menu3</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<style>
+body{
+  background-color: rgb(255, 204, 123);
+width:100%;
+}
+
+.title{
+  font-family: Lucida Calligraphy;
+  font-size: 8vw;
+  font-weight: bold;
+  color: rgb(205,113,53);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ourmenu{
+  margin: 10px;
+  border: groove 14px rgb(205,133,63);
+  height: 1000px;
+  background-color: #8b0000;
+  padding: 10px;
+  
+} 
+
+.tbl{
+  font-weight: bold;
+  font-family: Lucida Calligraphy;
+  color: rgb(205,113,53); 
+  border-collapse: collapse;
+  width: 100%;
+}
+td{
+  padding: 5 px 15px; 
+  border-collapse: collapse;
+}
+
+.cap{
+  font-weight: bold;
+  font-family: Lucida Calligraphy;
+  color: rgb(255,222,100);
+  font-size: 2.4vw;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.stl{
+  color: rgb(255,222,100);
+  padding-left: 52px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.5vw;
+  text-decoration: underline;
+}
+
+.stl1{
+  color: rgb(255,222,100);
+  padding-left: 40px;
+}
+
+.stl3{
+  color: rgb(255,222,100);
+  font-size: 2.4vw;
+  text-align:center;
+  text-decoration: underline;
+  padding-left: 240px;
+}
+.rupi{
+  color: rgb(255,222,100);
+  font-size: 2.5vw;
+  float: right;
+}
+
+/* Style the buttons */
+
+.btnbox{
+  padding-left: 600px;
+  padding-bottom: 15px;
+  width: auto;
+  background-color: rgb(255, 204, 123);
+  
+}
+
+.btn{
+  border: none;
+  padding: 10px 16px;
+  background-color: rgb(205,113,53);
+  margin-left: 5px;
+  color: rgb(255, 204, 123);
+}
+
+.btn:hover{
+  color: rgb(127,111,50);
+}
+
+</style>
+</head>
+
+<body>
+
+
+  <div class="box1">
+<ul>
+	<li><div class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;">Login</div>
+	</li>
+		  <li style="padding-left:320px"><a href="index.html">Home</a></li>
+  		  <li><a href="about.html">About Us</a></li>
+  		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="order.html">Order Online</a></li>
+  		  <li><a href="contact.html">Contact us</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+	</ul>
+
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="btnlog" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  
+
+</div>
+</div>
+
+	<div class="title">
+Our Menu</div>
+		<div class="ourmenu">
+
+	<table class="tbl"> <caption class="cap">Weekend Special SAT. SUN. Chef's Choice</caption>
+		<tr>
+		<td></td>
+		
+		
+
+		<td class="rupi">&#8377</td>
+		<td></td>
+		</tr>
+		<tr>
+	
+		<td></td>
+		
+	
+		<td class="stl1">Half</td>
+		<td class="stl1">Full</td>
+		</tr>
+		<tr>
+	
+		<td class="stl1">- Veg Galuti Kebab</td>
+		<td class="stl1"></td>
+		<td class="stl1">270</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Mutton Tunda Kebab</td>
+		
+		<td class="stl1"></td>
+		<td class="stl1">470</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Special Parantha Serves with kebab</td>
+		<td class="stl1"></td>
+		<td class="stl1">60</td>
+		</tr>
+		<tr>
+		<td class="stl3">Rice</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Rice Plan</td>
+		<td class="stl1"></td>
+		<td class="stl1">85</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Rice Jeera</td>
+		
+		<td class="stl1"></td>
+		<td class="stl1">95</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Rice Pulao</td>
+		<td class="stl1"></td>
+		<td class="stl1">105</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Veg Biryani</td>
+		
+		<td></td>
+		<td class="stl1">160</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Chicken Biryani</td>
+		<td></td>
+		<td class="stl1">210</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Mutton Biryani</td>
+		<td></td>
+		<td class="stl1">290</td>
+		</tr>
+		<tr>
+		<td class="stl3">Roti Naan</td>
+		<td></td>
+		<td class="stl1"></td>
+		</tr>
+		<tr>
+		<td  class="stl1">- Plain Roti</td>
+		<td></td>
+		<td class="stl1">10</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Butter Roti</td>
+		<td></td>
+		<td class="stl1">15</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Plain Naan</td>
+		<td></td>
+		<td class="stl1">30</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Butter Naan</td>
+		<td></td>
+		<td class="stl1">35</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Lucha Parantha</td>
+		<td></td>
+		<td class="stl1">35</td>
+		</tr>
+		<tr>
+		<td class="stl1">- Stuffed Kulcha</td>
+		<td class="stl1"></td>
+		<td class="stl1">55</td>
+</tr>
+<tr>
+<td class="stl1">- Keema Naan with Gravy</td>
+<td></td>
+<td class="stl1">90</td>
+</tr>
+<tr>
+<td class="stl1">- Paneer Naan with Gravy</td>
+<td></td>
+<td class="stl1">75</td>
+</tr>
+<tr>
+<td class="stl3">Chinese Food</td>
+</tr>
+<tr>
+<td class="stl1">- Noodles Veg</td>
+<td></td>
+<td class="stl1">95</td>
+</tr>
+<tr>
+<td class="stl1">- Veg Manchurian Dry/Gravy</td>
+<td></td>
+<td class="stl1">140</td>
+</tr>
+<tr>
+<td class="stl1">- Chilly Paneer Dry/Gravy</td>
+<td></td>
+<td class="stl1">175</td>
+</tr>
+<tr>
+<td class="stl1">- Veg Fried Rice</td>
+<td class="stl1"></td>
+<td class="stl1">105</td>
+</tr>
+<tr>
+<td class="stl1">- Chilly Chicken Dry/Gravy</td>
+<td class="stl1"></td>
+<td class="stl1">320</td>
+</tr>
+<tr>
+<td class="stl1">- Chicken Noodles</td>
+<td class="stl1"></td>
+<td class="stl1">130</td>
+</tr>
+<tr>
+<td class="stl1">- Chicken fried Rice</td>
+<td></td>
+<td class="stl1">125</td>
+</tr>
+<tr>
+<td class="stl1">- Garlic Chicken</td>
+<td></td>
+<td class="stl1">240</td>
+</tr><tr>
+<td class="stl1">- Lemon Chicken</td>
+<td></td>
+<td class="stl1">295</td>
+</tr><tr>
+<td class="stl1">- Garlic Chicken</td>
+<td></td>
+<td class="stl1">295</td>
+</tr>
+<tr>
+<td class="stl1">- Shred Chicken</td>
+<td></td>
+<td class="stl1">340</td>
+</tr>
+	</table>
+	</div>	</div>
+</div>
+<div class="btnbox">
+<a href="menu.html"><button class="btn">1</button></a>
+<a href="menu2.html"><button class="btn">2</button></a>
+<a href="menu3.html"><button class="btn">3</button></a>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

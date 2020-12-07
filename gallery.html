@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+
+body{
+  background-color: rgb(255, 204, 123);
+}
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE 10 */
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: rgb(205,133,63);
+  color: rgb(255,222,150);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: rgb(225,153,83);
+  color: rgb(127,111,50);
+}
+
+.btn.active {
+  background-color: rgb(225,153,83);
+  color: rgb(127,111,50);
+}
+
+
+
+
+ /* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+
+</style>
+</head>
+<script src="galleryscript.js"></script>
+<body>
+  <div class="box1">
+<ul>
+		  <li style="padding-left:390px"><a href="index.html">Home</a></li>
+  		  <li><a href="about.html">About Us</a></li>
+  		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="order.html">Order Online</a></li>
+  		  <li><a href="contact.html">Contact us</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+	</ul>
+
+</div>
+
+
+
+
+<!-- Header -->
+<div class="header">
+  
+<a href="gallery.html"><button class="btn active" onclick="four()">1</button></a>
+<a href="gallery2.html"><button class="btn " onclick="four()">2</button></a>
+<a href="gallery3.html"><button class="btn" onclick="four()">3</button></a>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img class="myImg"  src="img/IMG-20200224-WA0023.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0001.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0003.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0004.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0005.jpg" style="width:100%">
+    </div>
+  <div class="column">
+    <img class="myImg" src="img/IMG-20200305-WA0011.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0007.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200305-WA0012.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0009.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0010.jpg" style="width:100%">
+    </div>  
+  <div class="column">
+    <img class="myImg" src="img/IMG-20200224-WA0011.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0012.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0013.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0014.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0015.jpg" style="width:100%">
+    </div>
+  <div class="column">
+    <img class="myImg" src="img/IMG-20200224-WA0016.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0017.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0018.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0019.jpg" style="width:100%">
+    <img class="myImg" src="img/IMG-20200224-WA0020.jpg" style="width:100%">
+    </div>
+</div>
+
+<div class="header">
+  
+<a href="gallery.html"><button class="btn active" onclick="four()">1</button></a>
+<a href="gallery2.html"><button class="btn " onclick="four()">2</button></a>
+<a href="gallery3.html"><button class="btn" onclick="four()">3</button></a>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

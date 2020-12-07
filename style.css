@@ -1,0 +1,397 @@
+
+body{
+  margin: 0;
+  padding:0;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+
+.box1{
+  height:50px;
+  widht: auto;
+  background-color: rgb(205,133,63);
+}
+
+
+.box2{
+  text-align: center;
+  font-family: Lucida Calligraphy;
+  height: 700px;
+  width: auto;
+  padding-top:140px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.box3{
+  text-align: center;
+  font-family: Lucida Calligraphy;
+  height: 350px;
+  width: auto;
+  padding-top: 180px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 800px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+  box-shadow:  8px 10px 18px #888888;
+}
+
+			/*slideshow section*/ 
+.setsection{
+  height: 560px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(205,133,63);
+}
+
+.setsection1{
+  height: 480px;
+  background-color: rgb(205,133,63);
+  text-align: center;
+  padding: 5px;}
+
+.font1{				/*font used*/
+  font-size: 10vw;
+  font-weight: bold;
+  color: rgb(255,222,150);
+}
+
+.font2{
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: rgb(255,222,100);
+}
+
+
+			/*menu button*/
+
+
+.menubutton{
+  background-color: rgb(205,133,63);
+  font-family: Lucida Calligraphy;
+  border:  6px double rgb(255,222,100);
+  color: rgb(255,222,150);
+  padding-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  transition: 0.3s;
+  box-shadow:  2px 4px 8px  rgb(255,222,150);
+}
+
+.menubutton:hover{
+
+  width: 205px;
+  height: 42px;
+}
+
+
+.ptext{
+  position: relative;
+
+  width: 100%;
+  text-align: center;
+ 
+ 
+  
+}
+
+/* parallax effect */
+
+.img1, .img2, .img3{
+  position: relative;
+  				/* to lower the image write background-position here */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img2, .img3{
+  background-position: center;
+}
+
+.img1{
+   background-image:url('img/IMG-20200301-WA0006.jpg');
+   min-height: 100%;
+}
+
+.img2{
+   background-image:url('img/IMG-20200301-WA0007.jpg');
+   min-height: 100%;
+}
+
+.img3{
+   background-image:url('img/IMG-20200301-WA0003.jpg');
+   min-height: 100%;
+}
+
+
+
+
+/* login style*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for login */
+.button {
+  
+  color: rgb(255,222,150);
+  padding: 14px 20px;
+  
+  border: none;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  color: rgb(127,111,50);
+}
+
+/* Set a style for all buttons */
+.btnlog {
+  background-color: rgb(255,222,150);
+  color: rgb(127,111,50);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btnlog:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(255,222,150);
+  color: rgb(127,111,50);
+  border: none;
+}
+
+.cancelbtn:hover {
+  opacity: 0.8;
+}
+
+/*  position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.container {
+  padding: 16px;
+  
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* nav bar */
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding-left:0px;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: inline-block;
+  color: rgb(255,222,150);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: rgb(127,111,50);
+}
+
+
+
+.footer{
+  width: auto;
+  height: 1000px;
+  text-align: center;
+  background-color: rgb(255, 204, 123);
+  padding: 15px;
+}
+
+.cntbtn{
+  background-color: transparent;
+   font-size: 2.5vw;
+   color: rgb(205,113,53);
+   font-weight: bold;
+   font-family: Lucida Calligraphy;
+   border:none;
+}
+
+.cntbtn:hover{
+  color: rgb(127,111,50);
+}
+
+.foottbl{
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  border: px solid black;
+  padding: 5px;
+}
+
+
+
+.social{
+  border-radius:17px;
+  height: 80px;
+  width: 80px;
+}
+.social:hover{
+  opacity:0.6;
+}
+
+.tblbox{
+  width: auto;
+  height: 500px;
+  
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.imgtbl{
+  
+  width:100%;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.imgtbl td{
+  width: 25%;
+  text-align: center;
+}
+
+.imgtbl img{
+  height: 220px;
+  border-radius: 20px;
+}
+
+.galbtn{
+   background-color: rgb(205,133,63);
+  font-family: Lucida Calligraphy;
+  border:  6px double rgb(255,222,100);
+  color: rgb(255,222,150);
+  padding-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  transition: 0.3s;
+  box-shadow:  2px 4px 8px  rgb(255,222,150);
+}
+
+.galbtn:hover{
+  
+  width: 205px;
+  height: 42px;
+}

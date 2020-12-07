@@ -1,0 +1,335 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<title>restaurant</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(205,133,63);
+  color: rgb(255,222,150);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(255, 204, 123);
+}
+
+</style>
+</head>
+<script src="galleryscript.js"></script>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <div class="box1">
+<ul>
+	<li><div class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;">Login</div>
+	</li>
+		  <li style="padding-left:320px"><a href="index.html">Home</a></li>
+  		  <li><a href="about.html">About Us</a></li>
+  		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="order.html">Order Online</a></li>
+  		  <li><a href="contact.html">Contact us</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+	</ul>
+
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php " method="post"><!--use "jason" as username
+																			and "1234" as password-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+        
+      <button class="btnlog" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  
+
+</div>
+</div>
+
+
+
+
+
+	<div class="img1">
+		
+			<span>
+			<div class="box2">
+  				<div class="font1">Taste of Robin</div>
+  				<div class="font2">PATHANKOT FOOD KA MAZA</div>
+			</div>
+
+			</span>
+
+	</div>
+
+
+
+	<div class="setsection">
+	 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0001.jpg" >
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0004.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0005.jpg" >
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0006.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0007.jpg" >
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0008.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0009.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0010.jpg">
+  
+</div>
+
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0011.jpg">
+  
+</div>
+
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0018.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0019.jpg">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/IMG-20200224-WA0020.jpg">  
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center ; display: none" >
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</div>
+
+
+	<div class="img2">
+		
+			<span>
+			  <div class="box3">
+				<div class="font1">VEG & NON VEG</div>
+				<div class="font2">WE DELIVER DIFFERENT....<BR>
+				IN STYLE............. IN TASTE............& RECIPE<BR>
+				UNDER ROBIN CHEF MANGEMENT</div>
+			  </div></span>
+			<div class="ptext">
+		<a href="menu.html"  class="menubutton" >
+			See Menu</a>
+</div></div>
+		
+	</div>
+	
+	<div class="setsection1">
+	  <table style="width: 100%; height: 480px; padding-top:0px;"><tr>
+<td><img src="img/2.jpg" style="height: 460px; border-radius: 20px;"></td>
+<td class="font2" style=" width: 50%; text-align: center;   font-family: Lucida Calligraphy;"><font style="font-size: 4.0vw; text-decoration: underline;  font-weight: bold;">Our Process</font><br>Locally-sourced, fresh ingredients come together under the<br> thoughtful, creative care of our chefs. Gifts of nature prepared and <br>arranged so as to emphasize their flavors in a way that creates novel <br>experiences for the palate.</td>
+</table>
+</div>
+
+	<div class="img3">
+<div class="tblbox">
+<table class="imgtbl">
+<tr>
+<td><img src="img/4.jpg" width="320px"></td>
+<td><img src="img/IMG-20200224-WA0020.jpg"></td>
+<td><img src="img/IMG-20200224-WA0011.jpg"></td>
+<td><img src="img/IMG-20200224-WA0004.jpg"></td>
+</tr>
+</table>
+
+<div style="text-align:center">
+<a href="gallery.html" class="galbtn">View Gallery</a>
+</div>
+</div>
+	</div>
+	
+<div class="footer"><div >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3373.544423146822!2d75.65160631521817!3d32.27033778112786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c7f6447b118e5%3A0x8a23ee80fab0e8a1!2sTaste%20of%20Robin!5e0!3m2!1sen!2sin!4v1582789251890!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" "border-radius=20px"></iframe>
+</div>
+
+<div style="font-size: 2.5vw;  color: rgb(205,113,53);; font-weight: bold; font-family: Lucida Calligraphy;"><br><br>
+
+<address> Near Vodafone Store <br>Patel Chowk,<br>Pathankot</address>
+
+<hr color=rgb(205,113,53)  width=700px;>
+
+
+<a href="contact.html"><button class="cntbtn">Contact us</button></a>
+<hr color=rgb(205,113,53)  width=700px;>
+<div style=" padding-left: 410px;">
+<table class="foottbl">
+  <tr >
+<td colspan=2 style="font-size: 2.5vw;  color: rgb(205,113,53);; font-weight: bold; font-family: Lucida Calligraphy;">Follow us on</td>
+</tr>
+<tr>
+<td>
+<a href="https://m.facebook.com/tasteofrobin/?ref=bookmarks"><img  class="social"  src="img/facebook-logo-jpg.jpg"></a></td><td>
+<a href="https://www.instagram.com/taste.of.robin/"><img  class="social"  src="img/New_Instagram_Logo.jpg" ></a>
+</td>
+</tr>
+</table>
+
+</div><hr  align=center color=rgb(205,113,53)  width=700px;>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); 
+} 
+
+</script>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

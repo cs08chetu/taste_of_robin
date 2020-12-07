@@ -1,0 +1,237 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<title>reservation</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  background-color: rgb(255, 204, 123);
+width:100%;
+}
+
+
+
+input[type=text],input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(205,133,63);
+  color: rgb(255,222,150);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-wight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(195,123,53);
+}
+
+.container1 {
+  border-radius: 5px;
+  color: rgb(127,111,50);
+  background-color: rgb(255,222,150);
+  font-wight: bold;
+  padding: 20px;
+}
+
+.formbox{
+  width: auto;
+  height: 850px;
+  padding-top: 40px;
+  margin: 20px;
+}
+
+
+.title{
+  font-family: Lucida Calligraphy;
+  font-size: 8vw;
+  font-weight: bold;
+  color: rgb(205,113,53);
+  text-align: center;
+  text-decoration: underline;
+}
+
+td{
+  color: rgb(127,111,50);
+}
+
+ 
+</style>
+</head>
+<body>
+
+
+  <div class="box1">
+<ul>
+	<li><div class="button" onclick="document.getElementById('id01').style.display='block'" style="width:50px;">Login</div>
+	</li>
+		  <li style="padding-left:320px"><a href="index.html">Home</a></li>
+  		  <li><a href="about.html">About Us</a></li>
+  		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="order.html">Order Online</a></li>
+  		  <li><a href="contact.html">Contact us</a></li>
+		  <li><a href="reservation.html">Reservation</a></li>
+	</ul>
+
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action=" " method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="btnlog" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  
+
+</div>
+</div>
+
+
+	<div class="title" >Reservation</div>
+
+<div class="formbox">
+
+
+<div class="container1">
+  <form action="reservation.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="phone">Phone number</label>
+  <input type="tel" id="phone" name="phone" placeholder="" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+
+
+<table width=100%><tr><td>
+    <label for="people">Book table for</label></td>
+	<td><label for="people">Kitty Part/ Catering (size)</label></td></tr><tr><td>
+    <select id="people" name="peopletable">
+	<option value=""></option>
+      <option value="person">1 Person</option>
+      <option value="2people">2 People</option>
+      <option value="3people">3 People</option>
+      <option value="4people">4 People</option>
+      <option value="5people">5 People</option>
+      <option value="6people">6 People</option>
+      <option value="7people">7 People</option>
+      <option value="8people">8 People</option>
+    </select></td>
+<td>
+
+
+	    
+    <select id="people" name="peopleparty">
+	<option value=""></option>
+      <option value="5people">5 People</option>
+      <option value="10people">10 People</option>
+      <option value="15people">15 People</option>
+      <option value="20people">20 People</option>
+      <option value="25people">25 People</option>
+      <option value="30people">30 People</option>
+      <option value="35people">35 People</option>
+      <option value="40people">40 People</option>
+      <option value="45people">45 People</option>
+      <option value="50people">50 People</option>
+    </select>
+</td></tr></table>
+
+    <label for="time">Time</label>
+    <input type="text" id="time" name="time" placeholder="--:-- --">
+
+
+    <label for="date">Date</label>
+    <input type="text" id="date" name="date" placeholder="dd-mm-yyyy">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+
+
+</div>
+
+<hr color=rgb(205,113,53)  width=700px;>
+<div style="margin-top:250px;">
+<div class="footer"><div >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3373.544423146822!2d75.65160631521817!3d32.27033778112786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c7f6447b118e5%3A0x8a23ee80fab0e8a1!2sTaste%20of%20Robin!5e0!3m2!1sen!2sin!4v1582789251890!5m2!1sen!2sin" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" "border-radius=20px"></iframe>
+</div>
+
+<div style="font-size: 2.5vw;  color: rgb(205,113,53);; font-weight: bold; font-family: Lucida Calligraphy;"><br><br>
+
+<address> Near Vodafone Store, <br>Patel Chowk,<br>Pathankot</address>
+
+<hr color=rgb(205,113,53)  width=700px;>
+
+
+<a href="contact.html"><button class="cntbtn">Contact us</button></a>
+<hr color=rgb(205,113,53)  width=700px;>
+<div style=" padding-left: 410px;">
+<table class="foottbl">
+  <tr >
+<td colspan=2 style="font-size: 2.5vw;  color: rgb(205,113,53);; font-weight: bold; font-family: Lucida Calligraphy;">Follow us on</td>
+</tr>
+<tr>
+<td>
+<a href="https://m.facebook.com/tasteofrobin/?ref=bookmarks"><img  class="social"  src="img/facebook-logo-jpg.jpg"></a></td><td>
+<a href="https://www.instagram.com/taste.of.robin/"><img  class="social"  src="img/New_Instagram_Logo.jpg" ></a>
+</td>
+</tr>
+</table>
+
+</div><hr  align=center color=rgb(205,113,53)  width=700px;>
+</div>
+</div>
+</div>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
